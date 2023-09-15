@@ -14,8 +14,8 @@ function Student(name, lastName, yearOfBirth, marks){
         let sum = 0;
         let count = 0;
 
-        for (let i = 0; i < this.marks.length; i++) {
-        sum += i;
+        for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
         count++;
     }
          let average = sum / count;
@@ -23,7 +23,7 @@ function Student(name, lastName, yearOfBirth, marks){
         return average;
     }
 
-   
+}
 
     const studentIvan = new Student('Ivan', 'Budko', '1999', [89, 90, 78, 96])
-console.log(studentIvan.name+''+studentIvan.lastName+''+studentIvan.yearOfBirth+''+studentIvan.marks+''+studentIvan.showAge()+''+studentIvan.showAverageScore());
+console.log(studentIvan.name+' '+studentIvan.lastName+' '+studentIvan.yearOfBirth+' '+studentIvan.marks+' '+studentIvan.showAge()+' '+studentIvan.showAverageScore());
